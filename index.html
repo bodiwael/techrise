@@ -1942,16 +1942,6 @@
             }, 500);
         });
 
-        // Add click handlers for partnership buttons
-        document.querySelectorAll('.btn').forEach(btn => {
-            if (btn.textContent.includes('Partner')) {
-                btn.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    alert('Partnership registration will open soon! Please contact us directly for early partnership opportunities.');
-                });
-            }
-        });
-
         // Enhanced card interaction effects
         document.querySelectorAll('.timeline-content').forEach(content => {
             content.addEventListener('mouseenter', function () {
@@ -1983,4 +1973,5 @@
 
 
 </html>
+
 
