@@ -202,6 +202,36 @@
                 transform: translateY(0);
             }
         }
+        .sponsor-logo-vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .sponsor-img-large {
+            width: 150px;  /* Adjust size as needed */
+            height: 150px; /* Adjust size as needed */
+            object-fit: contain;
+        }
+        
+        .sponsor-text-below {
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .sponsor-placeholder {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            font-size: 48px;
+            font-weight: bold;
+            color: #666;
+        }
 
         .hero h1 {
             font-size: 5rem;
@@ -1235,6 +1265,7 @@
                 width: 100%;
             }
         }
+        
     </style>
 </head>
 
@@ -1610,14 +1641,14 @@
                         <span>IEEE Humanitarian Technologies</span>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center;">
+                <!-- <div style="display: flex; justify-content: center;">
                     <div class="sponsor-logo-enhanced">
                         <img src="Crea.jpg" alt="Sponsor Logo"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                         <div class="partner-logo-placeholder" style="display: none;">SP</div>
                         <span>Creativa HUB Alexandria</span>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Strategic Partners Subsection -->
@@ -1644,12 +1675,13 @@
                         <div class="partner-logo-placeholder" style="display: none;">H</div>
                         <span>IEEE SIGHT Group Tunisia Section</span>
                     </div>
-                    <!-- <div class="sponsor-logo-enhanced">
-                        <img src="Crea.jpg" alt="Creativa Logo"
+                    
+                    <div class="sponsor-logo-vertical">
+                        <img src="Crea.jpg" alt="Creativa Logo" class="sponsor-img-large"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                        <div class="partner-logo-placeholder" style="display: none;">C</div>
-                        <span>Creativa HUB Alexandria</span>
-                    </div> -->
+                        <div class="sponsor-placeholder" style="display: none;">C</div>
+                        <span class="sponsor-text-below">Creativa HUB Alexandria</span>
+                    </div>
                     <div class="sponsor-logo-enhanced">
                         <img src="Venture X.png" alt="Creativa Logo"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
